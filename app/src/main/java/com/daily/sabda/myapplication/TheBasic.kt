@@ -2,9 +2,10 @@ package com.daily.sabda.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View;
+import android.view.View
 import android.widget.Toast
 
+import java.util.Random
 
 import kotlinx.android.synthetic.main.activity_the_basic.*
 
@@ -24,7 +25,8 @@ class TheBasic : AppCompatActivity() {
     }
 
     fun intRandom(view: View?) {
-
+        val randInt = Random().nextInt(100) + 1
+        setTheText(randInt)
     }
 
     fun intToast(view: View?) {
